@@ -1,0 +1,11 @@
+Hello {{name}}, 
+{% if age < 18 %}
+You are only {{age}} years and are not old enough to vote. Please wait for {{18 - age}} years to apply for an electoral card.
+{% elif age == 18 %}
+You are {{age}} years and are now eligible to vote. Please apply for an electoral card.
+{% else %}
+You are {{age}} years and are eligible to vote. Please apply for an electoral card if you don't have one. If you have one, you are ready to vote.
+Please make use of it in the next election, and vote for the right candidate.
+{% endif %}
+Regards,
+Panchayat Commission
