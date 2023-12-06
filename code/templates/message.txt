@@ -1,0 +1,10 @@
+
+Hello {{recepient_name}},
+
+Congratulations on your achievement! 
+We are thrilled to celebrate this special moment with you. Your hard work and dedication have paid off, and we couldn't be prouder. May this success be the beginning of many more great things to come.
+
+Best wishes,
+{{sender_name}}
+
+
