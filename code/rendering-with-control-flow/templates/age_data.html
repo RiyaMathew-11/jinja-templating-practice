@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Age Data</title>
+    <style>
+        body {
+            font-family: Inter, sans-serif;
+            background-color: #f4f4f4;
+            height: 100vh;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        table {
+            border-collapse: collapse;
+            border-color: #1d2a88;
+            width: 60%;
+            box-shadow: 0 2rem 8rem rgba(0,0,0,0.1);
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #6c7ae0;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Age Data of Panchayat Individuals</h1>
+
+    <div style="margin: 5rem 10rem 5rem 32rem;">
+        <table border="3">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            {% for person in names %}
+            <tr>
+                <td>{{ person.name }}</td>
+                <td>{{ person.age }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+
+</body>
+</html>
